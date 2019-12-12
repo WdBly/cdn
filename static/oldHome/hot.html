@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?7191f97365f98638c50708499114b244";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <title>每日简报</title>
+
+    <!--网页标题左侧显示-->
+    <link rel="icon" type="image/png" sizes="16x16" href="fish.png"><link rel="icon" type="image/png" sizes="16x16" href="fish.png">
+    <!--收藏夹显示图标-->
+    <link rel="shortcut icon" href="fish.png" type="image/x-icon">
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pace.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/hot.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- js -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/blog/globalConfig.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140852536-1"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-140852536-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <style>
+        a:link {
+            color:black;
+            text-decoration:none;
+        }
+        a:visited {
+            color:black;
+            text-decoration:none;
+        }
+        a:hover {
+            color:#000000;
+            text-decoration:underline;
+        }
+        a:active {
+            color:black;
+            text-decoration:none;
+        }
+
+        #nav_next a, #nav_prev a {
+            color: #efefef;
+            display: block;
+            font-size: 100px;
+            line-height: 50px;
+            padding-bottom: 20px;
+            position: fixed;
+            text-align: center;
+            top: 375px;
+            width: 50px;
+            text-decoration: none;
+
+        }
+
+        #nav_prev a {
+            right: 1%
+        }
+        #nav_next a {
+            left: 1%
+        }
+
+        #nav_next a:hover, #nav_prev a:hover {
+            color: #999
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <script src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jqueryui/style.css">
+
+    <script>
+        $(window).on("resize scroll",function(){
+
+            var windowHeight = $(window).height();//当前窗口的高度
+            var scrollTop = $(window).scrollTop();//当前滚动条从上往下滚动的距离
+            var docHeight = $(document).height(); //当前文档的高度
+            //当 滚动条距底部的距离 + 滚动条滚动的距离 >= 文档的高度 - 窗口的高度
+            //换句话说：（滚动条滚动的距离 + 窗口的高度 = 文档的高度）  这个是基本的公式
+            if (scrollTop + windowHeight >= docHeight) {
+                var currentRead = localStorage.getItem("currentRead")
+                getNextPageInfo(currentRead)
+            }
+        });
+        $(function() {
+            $( "#myHotBar" ).sortable({
+                revert: true
+            });
+            $( "ul, li" ).disableSelection();
+        });
+    </script>
+</head>
+
+<body id="page">
+<div class="container" >
+
+</div>
+
+
+<div class="content-body">
+    <div class="container">
+
+        <div class="row">
+
+            <main class="col-md-12">
+                <!-- <center><a href="http://tophub.fun/main/home/hot/0"><span style="color: red">新版热榜发布啦，抢先体验！</span></a></center> -->
+                <div>
+                    <!-- 标签 -->
+                    <!-- Nav tabs 标签导航-->
+                    <ul class="nav nav-tabs" role="tablist" id="myHotBar">
+                        <!-- 标签对应着内容 #home，#profile，#messages -->
+
+                    </ul>
+                    <!-- 标签的内容 -->
+                    <!-- Tab panes 选项卡窗格-->
+                    <div class="tab-content" id="tab-content">
+                        <header class="entry-header">
+                            <h1 class="entry-title">
+                                <img style="text-align: center" src="./js/blog/lazyload.gif">
+                            </h1>
+                            <div class="entry-meta">
+                                <span >服务器君努力加载中~~~</span>
+                            </div>
+                        </header>
+                        <!-- 此处的id对应标签中的a的href链接 -->
+
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+</div>
+
+<footer id="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div style="text-align: center;">
+                    <img src="wxx.png" style="width: 290px;height: 310px">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script id="_wau272">var _wau = _wau || []; _wau.push(["dynamic", "9qs7j6rhey", "272", "a4c2f4ffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+<script src="js/script.js"></script>
+<script src="js/blog/hot.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/layer/2.3/layer.js"></script>
+<script src="https://cdn.jsdelivr.net/gh//timeromantic/static@1.0/js/2D/L2Dwidget.1.min.js.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/layer/2.3/layer.js"></script>
+<div id="live2d-widget"><canvas id="live2dcanvas" width="200" height="400" style="position: fixed; opacity: 0.7; left: 0px; bottom: -20px; z-index: 99999; pointer-events: none;"></canvas></div>
+</body>
+<div id="nav_next_prev">
+    <span id="nav_prev"><a onclick="clickPrev(this)" id="nav_prev_id" href="#" title="上一页">›</a></span>
+
+    <span id="nav_next"><a onclick="clickNext(this)" id="nav_next_id" href="#" title="下一页">‹</a></span>
+</div>
+
+
+<a id="noticeSave" onmouseover="noticeSave()" href="#" onclick="saveLiSort()"   class="btn btn-default"  role="button" style="position:fixed;right:10px;bottom:170px">
+    <span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span>
+</a>
+
+<a href="https://tophub.fun"  target="_blank"  class="btn btn-default"  role="button" style="position:fixed;right:10px;bottom:90px">
+    新
+</a>
+
+<a id="deleteAllHidden" onmouseover="showDeleteAllHidden()" href="#" onclick="deleteAllHidden()"   class="btn btn-default"  role="button" style="position:fixed;right:10px;bottom:130px">
+    <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+</a>
+
+<a id="feedBackMine" target="_blank" onmouseover="feedback()"  class="btn btn-default" href="https://www.printf520.com/single.html?id=65" role="button" style="position:fixed;right:10px;bottom:50px">
+    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+</a>
+
+
+<a class="btn btn-default" href="#" role="button" style="position:fixed;right:10px;bottom:10px">
+    <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+</a>
+<script>
+    if (isMobile()) {
+        $("#nav_next_prev").hide()
+    }
+
+</script>
+</body>
+</html>

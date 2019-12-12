@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["app"],[],[["./src/entry-client.js","runtime","vendors","common"]]]);
